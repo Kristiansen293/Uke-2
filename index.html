@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>OppgaverUke11-2025</title>
+</head>
+<body>
+
+    <h1>Oppgaver uke 2 - Javascript 1</h1>
+    <div class="container">
+        <h2>Oppgave 1: Endre bakgrunnsfarge</h2>
+        <div id="text">Klikk knappen for å endre bakgrunnsfargen</div>
+        <button onclick="changeColor()">Endre farge</button>
+
+        <h2>Oppgave 2: Endre tekst og størrelse</h2>
+        <p class="paragraph">Opprinnelig tekst</p>
+        <button onclick="modifyParagraph()">Endre tekst</button>
+
+        <h2>Oppgave 3: To-do liste</h2>
+        <select id="wordList">
+            <option value="Kjøpe melk">Kjøpe melk</option>
+            <option value="Lese bok">Lese bok</option>
+            <option value="Gjøre lekser">Gjøre lekser</option>
+        </select>
+        <button onclick="addToDo()">Legg til</button>
+        <ul id="todoList"></ul>
+
+        <h2>Oppgave 4: Kalender</h2>
+        <div class="calendar">
+            <div class="day" id="day1" onclick="addEvent('day1')">1</div>
+            <div class="day" id="day2" onclick="addEvent('day2')">2</div>
+            <div class="day" id="day3" onclick="addEvent('day3')">3</div>
+            <div class="day" id="day4" onclick="addEvent('day4')">4</div>
+            <div class="day" id="day5" onclick="addEvent('day5')">5</div>
+            <div class="day" id="day6" onclick="addEvent('day6')">6</div>
+            <div class="day" id="day7" onclick="addEvent('day7')">7</div>
+        </div>
+        <h2>Oppgave 5: Dynamisk Tema-veksler</h2>
+        <p style="font-weight: bold;"> Trykk på knappen for å bytte mellom lys og mørk modus</p>
+        <p>Lag en funksjon som bytter mellom et lyst og et mørkt tema når en knapp trykkes.
+            bruk gjerne <strong>document.body.classList.toggle()</strong>  for å bytte mellom klasser.
+            Opprett CSS-klasser for light-mode og dark-mode.
+            Koden nedenfor kan hjelpe deg til å løse oppgaven <i class="fa-solid fa-face-laugh-wink"></i>
+        </p>
+        <img src="img/oppage5.PNG" alt="">
+        <br>
+        <img src="img/oppgave5.PNG" alt="">
+        <br>
+        <img src="img/kodeoppgave5.PNG" alt="">
+
+        <h2>Oppgave 6 - Live Tekstredigerer</h2>
+        <p>Lag et tekstfelt der brukeren kan skrive inn tekst, og formater teksten dynamisk mens de skriver. Brukere skal kunne endre skriftstørrelse, farge og skrifttype.
+            Bruk gjerne oninput-eventet for å lytte til tekstfeltendringer og querySelector() for å hente verdier fra dropdown-menyer.
+        </p>
+        <h2>Oppgave 7 - Interaktivt Bildegalleri</h2>
+        <p>Lag et bildegalleri der bildene zoomes inn når man holder musepekeren over dem, og zoomes ut når pekeren fjernes. Bruk gjerne Bruk mouseover og mouseout for å justere transform: scale(1.2).
+            Bruk getElementsByClassName() eller querySelectorAll() for å velge flere bilder.
+              <div class="gallery">
+    <img class="zoom-img" src="https://img.jbox.com.br/wp/wp-content/uploads/2020/10/hello-kitty-supercute-destacada-768x485.jpg" alt="">
+    <img class="zoom-img" src="https://img.jbox.com.br/wp/wp-content/uploads/2020/10/hello-kitty-supercute-destacada-768x485.jpg" alt="">
+     <img class="zoom-img" src="https://img.jbox.com.br/wp/wp-content/uploads/2020/10/hello-kitty-supercute-destacada-768x485.jpg" alt="">
+      <img class="zoom-img" src="https://img.jbox.com.br/wp/wp-content/uploads/2020/10/hello-kitty-supercute-destacada-768x485.jpg" alt="">
+</div>  
+        </p>
+        <h2>Oppgave 8 - Dra-og-slipp Elementer</h2>
+        </div>    
+           
+        </p>
+        <h2>Oppgave 8 - Dra-og-slipp Elementer</h2>
+        <p>Lag en funksjonalitet der brukeren kan dra og slippe bokser på skjermen. Bruk gjerne Bruk dragstart, dragover og drop eventer. Bruk getElementById() for å endre position til boksen som dras.</p>
+        <div class="drag-container">
+ 
+    <div id="box1" class="box" draggable="true">Boks 1</div>
+    <div id="box2" class="box" draggable="true">Boks 2</div>
+ 
+    <div id="dropZone">Slipp boksene her</div>
+ 
+</div>
+        <p>Lag en funksjonalitet der brukeren kan dra og slippe bokser på skjermen. Bruk gjerne Bruk dragstart, dragover og drop eventer. Bruk getElementById() for å endre position til boksen som dras.</p>
+
+
+   
+
+
+    </div>
+
+    <script src="index.js"></script>
+
+                                                                                                                                           
+ 
+
+
+    
+</body>
+
+
+</html>
