@@ -74,14 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
 const oppgave6 = Array.from(document.querySelectorAll("h2"))
     .find(h2 => h2.textContent.includes("Oppgave 6"));
 
-// Opprett tekstfelt
+// Oppretter tekstfelt
 const textarea = document.createElement("textarea");
 textarea.placeholder = "Skriv tekst her...";
 textarea.style.width = "100%";
 textarea.style.height = "80px";
 textarea.style.marginTop = "10px";
 
-// Opprett font-størrelse dropdown
+// Oppretter font-størrelse dropdown
 const sizeSelect = document.createElement("select");
 ["16px", "20px", "24px", "32px"].forEach(size => {
     const option = document.createElement("option");
@@ -90,12 +90,12 @@ const sizeSelect = document.createElement("select");
     sizeSelect.appendChild(option);
 });
 
-// Opprett fargevelger
+// Oppretter fargevelger
 const colorInput = document.createElement("input");
 colorInput.type = "color";
 colorInput.style.margin = "0 10px";
 
-// Opprett font-familie dropdown
+// Oppretter font-familie dropdown
 const fontSelect = document.createElement("select");
 ["Arial", "Times New Roman", "Verdana"].forEach(font => {
     const option = document.createElement("option");
@@ -104,8 +104,8 @@ const fontSelect = document.createElement("select");
     fontSelect.appendChild(option);
 });
 
-// Opprett forhåndsvisning
-// Opprett forhåndsvisning
+
+// Oppretter forhåndsvisning
 const preview = document.createElement("p");
 preview.textContent = "Teksten vises her";
 preview.style.border = "1px solid #ccc";
