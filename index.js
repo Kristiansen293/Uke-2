@@ -1,4 +1,4 @@
-// Oppgave 1: Endre bakgrunnsfargen til teksten
+// Oppgave 1: Endrer bakgrunnsfargen til teksten
 function changeColor() {
     const colors = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lavender"];
     let textDiv = document.getElementById("text");
@@ -13,14 +13,14 @@ function changeColor() {
     textDiv.style.backgroundColor = newColor;
 }
 
-// Oppgave 2: Legge til tekst og endre størrelse på et p-element
+// Oppgave 2: Legger til tekst og endre størrelse på et p-element
 function modifyParagraph() {
     let paragraph = document.querySelector(".paragraph");
     paragraph.textContent = "Dette er den nye teksten";
     paragraph.style.fontSize = "24px"; // endrer skriftstørrelse
 }
 
-// Oppgave 3: Lage en to-do liste
+// Oppgave 3: Lager en to-do liste
 function addToDo() {
     let selectedWord = document.querySelector("#wordList").value;
     let ul = document.getElementById("todoList");
@@ -29,14 +29,14 @@ function addToDo() {
     ul.appendChild(li);
 }
 
-// Oppgave 4: Lage en kalender med eventer
+// Oppgave 4: Lager en kalender med eventer
 function addEvent(day) {
     let eventText = prompt("Legg til en hendelse:");
     if (eventText) {
         let dayDiv = document.getElementById(day);
         let eventSpan = document.createElement("span");
         eventSpan.textContent = " - " + eventText;
-        eventSpan.style.display = "block"; // legger det under dagen
+        eventSpan.style.display = "block"; // legger teksten under dagen
         eventSpan.style.fontSize = "12px";
         eventSpan.style.color = "red";
         dayDiv.appendChild(eventSpan);
@@ -45,7 +45,7 @@ function addEvent(day) {
 
 // Oppgave 5: Dynamisk Tema-veksler
 document.addEventListener("DOMContentLoaded", () => {
-    // Finn containeren for Oppgave 5
+    // Finner containeren for Oppgave 5
     const oppgave5 = document.querySelector("h2:nth-of-type(5)"); // 5. <h2> er Oppgave 5
 
     if (oppgave5) {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.id = "themeToggle";
         btn.textContent = "Bytt Tema";
 
-        // Legg knappen rett etter overskriften Oppgave 5
+        // Legger knappen rett etter overskriften
         oppgave5.insertAdjacentElement("afterend", btn);
 
         // Event for å bytte tema
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Oppgave 6: Live Tekstredigerer
 
-// Finn h2-elementet for Oppgave 6
+// Finner h2-elementet for Oppgave 6
 const oppgave6 = Array.from(document.querySelectorAll("h2"))
     .find(h2 => h2.textContent.includes("Oppgave 6"));
 
@@ -113,20 +113,20 @@ preview.style.padding = "10px";
 preview.style.minHeight = "50px";
 preview.style.marginTop = "10px";
 
-// Legg til disse stilene:
+// Legger til disse stilene:
 preview.style.whiteSpace = "pre-wrap"; // Bevarer linjeskift fra textarea
 preview.style.wordWrap = "break-word"; // Bryter lange ord
 preview.style.overflowY = "auto"; // Legger til rullefelt hvis nødvendig
 
 
-// Legg elementene under Oppgave 6
+// Legger elementene under Oppgave 6
 oppgave6.insertAdjacentElement("afterend", preview);
 oppgave6.insertAdjacentElement("afterend", fontSelect);
 oppgave6.insertAdjacentElement("afterend", colorInput);
 oppgave6.insertAdjacentElement("afterend", sizeSelect);
 oppgave6.insertAdjacentElement("afterend", textarea);
 
-// Legg til eventer for live oppdatering
+// Legger til eventer for live oppdatering
 textarea.addEventListener("input", () => {
     preview.textContent = textarea.value;
 });
@@ -170,7 +170,7 @@ function drop(event) {
     event.target.appendChild(draggedBox);
 }
  
-// Hent elementer med getElementById
+// Henter elementer med getElementById
 document.getElementById("box1").addEventListener("dragstart", dragStart);
 document.getElementById("box2").addEventListener("dragstart", dragStart);
 document.getElementById("dropZone").addEventListener("dragover", allowDrop);
